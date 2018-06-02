@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+ 	<constant name="struts.enable.SlashesInActionNames" value="true"/>
+ 	<constant name="struts.action.extension" value="action,do,"/>
+	<!-- struts的配置 -->
+
+	<!-- 以包的形式组织 extends="struts-default" 继承之后，可以使用struts为我们提供许多便利的功能，除非你有一万个理由 -->
+	<package name="web" extends="struts-default" strict-method-invocation="false">
+		<action name="m1" class="com.daodaofun.action.Web1" method="m1">
+			<result name="success" type="dispatcher">/suc.jsp</result>
+		</action>
+		<action name="m2" class="com.daodaofun.action.Web2" method="m2">
+			<result >/suc.jsp</result>
+		</action>
+	</package>
+</struts>
