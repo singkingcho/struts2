@@ -17,7 +17,7 @@ import java.util.Map;
  */
 public class Ognl1  extends ActionSupport {
 
-
+   // 小该笔
     public String m1() {
         ValueStack valueStack = ActionContext.getContext().getValueStack();
         Map<String,Object> map = new HashMap();
